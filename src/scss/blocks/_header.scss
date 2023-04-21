@@ -4,13 +4,35 @@
   min-height: 80rem;
   background-image: url(../../img/living-room.jpg);
   background-repeat: no-repeat;
-  // object-fit: cover;
   background-size: 100%;
+
   &__nav {
     padding-top: 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__content {
+    margin-top: 21rem;
+
+    &-heading {
+      max-width: 57.2rem;
+      font-size: 6.4rem;
+      line-height: 6.6rem;
+      font-weight: 400;
+      color: $font-light;
+      margin-bottom: 5rem;
+    }
+
+    &-button {
+      background-color: $font-light;
+      &:hover {
+        background-color: transparent;
+        outline: 1px solid $font-light;
+        color: $font-light;
+      }
+    }
   }
 
   .menu {
@@ -43,4 +65,15 @@
       font-size: 1.6rem;
     }
   }
+}
+
+.button {
+  transition: all ease-in 0.2s;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  min-width: 20rem;
+  height: 4rem;
+  cursor: pointer;
 }
