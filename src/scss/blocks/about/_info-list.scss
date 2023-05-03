@@ -1,0 +1,19 @@
+.info-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+  max-width: 83.2rem;
+
+  &__item {
+    font-size: 4rem;
+  }
+
+  &__item-text {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    max-width: 14.9rem;
+  }
+}
