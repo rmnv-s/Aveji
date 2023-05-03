@@ -1,0 +1,50 @@
+@use 'helpers/color' as *;
+.about {
+  &__inner {
+    text-align: center;
+  }
+
+  &__text {
+    background-color: $bg-color;
+    padding: 19rem 0 15rem;
+    color: $main-black;
+  }
+
+  &__heading {
+    font-size: 9.6rem;
+    line-height: 12rem;
+    letter-spacing: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  &__subheading {
+    font-size: 3.2rem;
+  }
+
+  &__info {
+    background-color: $main-black;
+    color: $font-light;
+    padding: 12.5rem 0;
+  }
+}
+
+.info-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+  max-width: 83.2rem;
+
+  &__item {
+    font-size: 4rem;
+  }
+
+  &__item-text {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    max-width: 14.9rem;
+  }
+}

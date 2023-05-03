@@ -34,46 +34,4 @@
       }
     }
   }
-
-  .menu {
-    &__list {
-      position: relative;
-      display: flex;
-      padding: 0;
-
-      & :not(:last-child) {
-        margin-right: 3.8rem;
-        position: relative;
-        &::before {
-          content: '';
-          position: absolute;
-          top: 0px;
-          left: 8rem;
-          width: 0.2rem;
-          height: 1.6rem;
-          background-color: $font-light;
-          transform: rotate(30deg);
-        }
-      }
-    }
-    &__list-item {
-      list-style-type: none;
-    }
-    &__list-link {
-      text-decoration: none;
-      color: $font-light;
-      font-size: 1.6rem;
-    }
-  }
-}
-
-.button {
-  transition: all ease-in 0.2s;
-  border: none;
-  border-radius: 0.7rem;
-  padding: 1rem 3rem;
-  font-size: 1.6rem;
-  min-width: 20rem;
-  height: 4rem;
-  cursor: pointer;
 }

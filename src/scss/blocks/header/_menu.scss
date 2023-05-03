@@ -1,0 +1,31 @@
+@use 'helpers/color' as *;
+.menu {
+  &__list {
+    position: relative;
+    display: flex;
+    padding: 0;
+
+    & :not(:last-child) {
+      margin-right: 3.8rem;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 8rem;
+        width: 0.2rem;
+        height: 1.6rem;
+        background-color: $font-light;
+        transform: rotate(30deg);
+      }
+    }
+  }
+  &__list-item {
+    list-style-type: none;
+  }
+  &__list-link {
+    text-decoration: none;
+    color: $font-light;
+    font-size: 1.6rem;
+  }
+}
