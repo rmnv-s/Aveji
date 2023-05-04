@@ -1,0 +1,55 @@
+.materials-list {
+  list-style-type: none;
+  padding: 0;
+  border-top: 1px solid #8a8a8a;
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #8a8a8a;
+    cursor: pointer;
+    &:hover {
+      // background-color: #8a8a8a;
+    }
+
+    &:hover > .materials-list__item-img {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+    }
+    &:hover > .materials-list__item-text {
+      opacity: 1;
+    }
+    &:hover > .materials-list__item-number {
+      opacity: 1;
+    }
+  }
+
+  &__item-text {
+    font-size: 2.4rem;
+    color: #191a15;
+    opacity: 50%;
+  }
+
+  &__item-number {
+    font-size: 1.6rem;
+    color: #191a15;
+    opacity: 50%;
+  }
+
+  &__item-img {
+    position: absolute;
+    // top: 5px;
+    left: 40%;
+    transform: translate(-50%, -50%);
+
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+    opacity: 0;
+    z-index: 1;
+    transform: rotate(20deg);
+  }
+}
