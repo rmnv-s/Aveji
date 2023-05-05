@@ -1,0 +1,38 @@
+@use 'helpers/color' as *;
+
+.cards {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4.4rem;
+}
+
+.card {
+  border-top: 1px solid #646464;
+  display: grid;
+  grid-template-columns: 37.3rem 1fr;
+
+  max-width: 38.4rem;
+
+  &__name {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 2rem;
+  }
+
+  &__btn {
+    border: none;
+    font-size: 0;
+    width: 0.7rem;
+    margin-top: 2rem;
+    background: transparent;
+    background-image: url('../../img/project-card-plus.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__img {
+    margin-top: 4.5rem;
+  }
+}
