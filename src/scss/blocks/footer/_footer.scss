@@ -1,0 +1,19 @@
+@use 'helpers/color' as *;
+
+.footer {
+  background-color: $main-black;
+  padding: 8.5rem 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__phone-number {
+    color: $font-light;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+}

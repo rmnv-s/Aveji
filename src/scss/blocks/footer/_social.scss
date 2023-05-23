@@ -1,0 +1,19 @@
+.social {
+  padding: 0;
+  display: flex;
+
+  &__icon {
+    list-style-type: none;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__icon-link {
+    transition: all 0.3s ease-out;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
