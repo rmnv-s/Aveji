@@ -12,7 +12,6 @@
     border-bottom: 1px solid #8a8a8a;
     cursor: pointer;
     &:hover {
-      // background-color: #8a8a8a;
     }
 
     &:hover > .materials-list__item-img {
@@ -42,7 +41,7 @@
 
   &__item-img {
     position: absolute;
-    // top: 5px;
+    top: 5px;
     left: 40%;
     transform: translate(-50%, -50%);
 
