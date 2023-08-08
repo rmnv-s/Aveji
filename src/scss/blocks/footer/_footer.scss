@@ -8,6 +8,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 425px) {
+      flex-direction: column;
+      gap: 6rem;
+    }
   }
 
   &__phone-number {
@@ -17,4 +22,3 @@
     line-height: 2.1rem;
   }
 }
-

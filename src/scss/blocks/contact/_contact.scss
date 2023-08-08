@@ -2,10 +2,43 @@
 
 .contact {
   background-color: $bg-color;
+  @media (max-width: 768px) {
+    // opacity: 0.3;
+    // background-color: transparent;
+    background-color: rgb(231, 227, 221, 0.3);
+  }
 
   &__inner {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    overflow: hidden;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__content {
+    @media (max-width: 768px) {
+      padding-bottom: 20rem;
+    }
+    @media (max-width: 425px) {
+      padding-bottom: 18rem;
+    }
+    @media (max-width: 375px) {
+      padding-bottom: 19.2rem;
+    }
+  }
+
+  &__image {
+    @media (max-width: 768px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      min-height: 70%;
+      object-fit: cover;
+    }
   }
 
   &__heading {
@@ -20,12 +53,21 @@
     line-height: 3.1rem;
     max-width: 29.5rem;
     margin-bottom: 6.5rem;
+
+    @media (max-width: 375px) {
+      font-size: 2.2rem;
+      line-height: 2.5rem;
+    }
   }
 
   &__form {
-    // display: flex;
-    // flex-direction: column;
-    width: 38.4rem;
+    max-width: 38.5rem;
+    margin-right: 2rem;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      margin-right: 0;
+    }
 
     input {
       display: block;
@@ -38,6 +80,16 @@
       padding: 1rem 0;
       font-size: 1.6rem;
       margin-bottom: 3.2rem;
+    }
+  }
+
+  &__form-buton {
+    background-color: $main-black;
+    color: $font-light;
+    margin-top: 2rem;
+
+    @media (max-width: 375px) {
+      width: 100%;
     }
   }
 }

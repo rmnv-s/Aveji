@@ -26,9 +26,9 @@ function scripts() {
       'src/js/script.js',
     ])
       // .pipe(concat('script.min.js'))
-      .pipe(concat('script.js'))
-      .pipe(uglify())
-      .pipe(dest('src/js'))
+      // .pipe(concat('script.js'))
+      // .pipe(uglify())
+      // .pipe(dest('src/js'))
       .pipe(browserSync.stream())
   );
 }
