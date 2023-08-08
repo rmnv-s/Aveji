@@ -35,19 +35,28 @@
       border-radius: 50%;
       background-color: $main-black;
     }
+
     &-btn-left {
       position: absolute;
       left: -2.5rem;
       background-image: url('../../img/slider-arrow-left.svg');
       background-repeat: no-repeat;
       background-position: center center;
+      @media (max-width: 425px) {
+        left: -1.5rem;
+      }
     }
+
     &-btn-right {
       position: absolute;
       right: -2.5rem;
       background-image: url('../../img/slider-arrow-right.svg');
       background-repeat: no-repeat;
       background-position: center center;
+
+      @media (max-width: 425px) {
+        right: -1.5rem;
+      }
     }
   }
 }

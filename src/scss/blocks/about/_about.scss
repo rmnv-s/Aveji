@@ -8,6 +8,14 @@
     background-color: $bg-color;
     padding: 19rem 0 15rem;
     color: $main-black;
+
+    @media (max-width: 1024px) {
+      padding: 10rem 0 15rem;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 0 15rem;
+    }
   }
 
   &__heading {
@@ -16,10 +24,19 @@
     letter-spacing: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
+
+    @media (max-width: 425px) {
+      font-size: 6rem;
+      letter-spacing: 1rem;
+    }
   }
 
   &__subheading {
     font-size: 3.2rem;
+
+    @media (max-width: 425px) {
+      padding: 0 10px;
+    }
   }
 
   &__info {

@@ -11,8 +11,6 @@
     padding: 1.5rem 0;
     border-bottom: 1px solid #8a8a8a;
     cursor: pointer;
-    &:hover {
-    }
 
     &:hover > .materials-list__item-img {
       display: block;
@@ -31,18 +29,20 @@
     font-size: 2.4rem;
     color: #191a15;
     opacity: 50%;
+    z-index: 10;
   }
 
   &__item-number {
     font-size: 1.6rem;
     color: #191a15;
     opacity: 50%;
+    z-index: 10;
   }
 
   &__item-img {
     position: absolute;
-    top: 5px;
-    left: 40%;
+    // top: 5px;
+    // left: 40%
     transform: translate(-50%, -50%);
 
     visibility: hidden;
@@ -50,5 +50,8 @@
     opacity: 0;
     z-index: 1;
     transform: rotate(20deg);
+    @media (max-width: 425px) {
+      display: none;
+    }
   }
 }

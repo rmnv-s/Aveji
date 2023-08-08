@@ -1,5 +1,9 @@
 @use 'helpers/color' as *;
 .menu {
+  @media (max-width: 425px) {
+    display: none;
+  }
+
   &__list {
     position: relative;
     display: flex;
@@ -20,12 +24,23 @@
       }
     }
   }
+
   &__list-item {
     list-style-type: none;
   }
+
   &__list-link {
     text-decoration: none;
     color: $font-light;
     font-size: 1.6rem;
+    transition: all 0.3s linear;
+  }
+
+  &__list-social {
+    display: none;
+  }
+
+  &__list-social-active {
+    display: flex;
   }
 }

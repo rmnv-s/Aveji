@@ -12,8 +12,15 @@
   border-top: 1px solid #646464;
   display: grid;
   grid-template-columns: 37.3rem 1fr;
-
   max-width: 38.4rem;
+
+  @media (max-width: 375px) {
+    grid-template-columns: 32.3rem 1fr;
+  }
+
+  @media (max-width: 320px) {
+    grid-template-columns: 27rem 1fr;
+  }
 
   &__name {
     font-size: 1.6rem;
@@ -34,5 +41,10 @@
 
   &__img {
     margin-top: 4.5rem;
+
+    @media (max-width: 375px) {
+      width: 100%;
+      grid-column: 1/3;
+    }
   }
 }

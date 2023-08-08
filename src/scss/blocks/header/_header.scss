@@ -1,0 +1,81 @@
+@use 'helpers/color' as *;
+
+.header {
+  min-height: 80rem;
+  background-image: url(../../img/living-room.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (max-width: 1024px) {
+    background-size: 140%;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 70rem;
+  }
+
+  @media (max-width: 425px) {
+    min-height: 40rem;
+  }
+
+  @media (max-width: 375px) {
+    background-size: 150%;
+  }
+
+  &__nav {
+    padding-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 425px) {
+      padding-top: 1.5rem;
+    }
+  }
+
+  &__content {
+    margin-top: 21rem;
+
+    @media (max-width: 425px) {
+      margin-top: 5rem;
+    }
+
+    @media (max-width: 320px) {
+      margin-top: 2rem;
+    }
+
+    &-heading {
+      max-width: 57.2rem;
+      font-size: 6.4rem;
+      line-height: 6.6rem;
+      font-weight: 400;
+      color: $font-light;
+      margin-bottom: 5rem;
+
+      @media (max-width: 425px) {
+        font-size: 3.8rem;
+        line-height: 4.6rem;
+      }
+
+      @media (max-width: 375px) {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+      }
+
+      @media (max-width: 320px) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-button {
+      background-color: $font-light;
+      color: $main-black;
+      text-decoration: none;
+      &:hover {
+        background-color: transparent;
+        outline: 1px solid $font-light;
+        color: $font-light;
+      }
+    }
+  }
+}
