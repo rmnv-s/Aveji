@@ -48,3 +48,30 @@ menuLink.forEach((link) => {
     root.classList.remove('overflow');
   });
 });
+
+const btnSliderLeft = document.querySelector('.projects__slider-btn-left');
+const btnSliderRight = document.querySelector('.projects__slider-btn-right');
+
+// СЛАЙДР
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.querySelector('.projects__slider');
+  const cards = slider.querySelectorAll('.card');
+
+  const cardWidth = cards[0].offsetWidth;
+  const numCards = cards.length;
+  let currentIndex = 0;
+
+  btnSliderLeft.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+  });
+
+  btnSliderRight.addEventListener('click', () => {
+    if (currentIndex < numCards - 1) {
+      currentIndex++;
+      slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+  });
+});
